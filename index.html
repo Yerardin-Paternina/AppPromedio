@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>App Promedio</title>
+</head>
+<body>
+
+<center>
+<h2>CALCULAR PROMEDIO</h2>
+<table border="2">
+    <td>
+      </tr>
+      <tr>
+        <td>Prinera Nota<br>
+          <input type="text" id="t1">
+          <br></td>
+      </tr>
+      <tr>
+          <td>Segunda Nota<br>
+          <input type="text" id="t2">
+          <br>
+      </tr>
+      <tr>
+            <td>Tercera Nota<br>
+            <input type="text" id="t3">
+        </tr>
+      <tr>
+  </table>
+
+
+<table border="2">
+<td>LA NOTA FINAL ES:</td>
+<p><td id="promedio"></br></p> 
+</table>
+<p><input type="button" value="Calcular" onclick="Calcular();"></p>
+</body>
+</center>
+
+<script>
+ function Calcular() {
+ var vr1 = document.getElementById('t1').value;
+ var vr2 = document.getElementById('t2').value;
+ var vr3 = document.getElementById('t3').value;
+ var p = (parseFloat(vr1)+parseFloat(vr2)+parseFloat(vr3))/3;
+ document.getElementById('promedio').innerHTML = p;
+ }
+</script>
+</html>
+
+<body>
+</body>
+</html>
